@@ -102,3 +102,18 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+/*===== Update EXPERIENCE =====*/
+function updateExperience() {
+    var experienceElement = document.getElementById("noOfExperience");
+    var currentYear = new Date().getFullYear();
+    // Calculate the years of experience
+    var startYear = 2019; // the year started experience
+    var yearsOfExperience = currentYear - startYear;
+    // Update the content of the <p> tag with the current year
+    experienceElement.textContent = yearsOfExperience;
+}
+    // Call the function when the page loads
+    updateExperience();
+
+/*=============================*/
